@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="no-js hasSidebar hasPageActions hasBreadcrumb " lang="en-us" dir="ltr" >
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="What's New in C# 6 - C# Guide" />
+	<meta property="og:image" content="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@docsmsft" />
+	<meta name="twitter:title" content="What's New in C# 6 - C# Guide" />
+	<meta name="twitter:description" content="Learn the new features in C# Version 6" />
+	<meta name="twitter:image" content="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png" />
+	<meta name="twitter:image:alt" content="Microsoft Logo" />
+
+		<meta name="author" content="BillWagner" />
+<meta name="ms.author" content="dotnetcontent" />
+<meta name="manager" content="wpickett" />
+<meta name="breadcrumb_path" content="/dotnet/toc.json" />
+<meta name="apiPlatform" content="dotnet" />
+<meta name="uhfHeaderId" content="MSDocsHeader-DotNet" />
+<meta name="ms.devlang" content="csharp" />
+<meta name="ms.assetid" content="4d879f69-f889-4d3f-a781-75194e143400" />
+<meta name="description" content="Learn the new features in C# Version 6" />
+<meta name="keywords" content=".NET, .NET Core" />
+<meta name="ms.topic" content="article" />
+<meta name="ms.date" content="09/22/2016" />
+<meta name="ms.technology" content="devlang-csharp" />
+<meta name="ms.prod" content=".net" />
+<meta name="search.ms_sitename" content="Docs" />
+<meta name="search.ms_docsetname" content="core-docs" />
+<meta name="locale" content="en-us" />
+<meta name="site_name" content="Docs" />
+<meta name="search.ms_product" content="VS" />
+<meta name="depot_name" content="VS.core-docs" />
+<meta name="updated_at" content="2017-10-21 06:48 AM" />
+<meta name="gitcommit" content="https://github.com/dotnet/docs/blob/e7ccb0d74181dc1055eb11a1cdcad20dca4d78ab/docs/csharp/whats-new/csharp-6.md" />
+<meta name="original_content_git_url" content="https://github.com/dotnet/docs/blob/live/docs/csharp/whats-new/csharp-6.md" />
+<meta name="document_id" content="36fef60d-04e9-dc86-2e3f-134c10ea37bb" />
+<meta name="document_version_independent_id" content="09b5aa7a-1b43-8bf9-9786-f10f457488dd" />
+<meta name="pagetype" content="Conceptual" />
+<meta name="toc_rel" content="../../docs/toc.json" />
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/en-us/VS.core-docs/{branchName}{pdfName}" />
+<meta name="word_count" content="4284" />
+
+	<meta name="scope" content=".NET" />
+<link href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6" rel="canonical">
+	<title>What's New in C# 6 - C# Guide | Microsoft Docs</title>
+
+	<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/css/c8402cbc136b2fc0f749.site.css ">
+	<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/css/c8402cbc136b2fc0f749.conceptual.css ">
+
+	<script>
+	var msDocs = {
+		data:{
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pathToTheme: '/_themes/docs.theme/master/en-us/_themes/',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			hasComments: true,
+			forceVersionPicker:false		},
+		functions:{},
+		settings:{
+			extendBreadcrumb: false
+		}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="/_themes/docs.theme/master/en-us/_themes/global/js/bluebird.min.js"><\/script>');
+	}
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+		<script src="/_themes/docs.theme/master/en-us/_themes/global/js/polyfills/all.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+	<!--<![endif]-->
+	<script>window.jQuery || document.write('<script src="/_themes/docs.theme/master/en-us/_themes/global/js/jquery/jquery-1.12.4.min.js"><\/script>')</script>
+	<script src="/_themes/docs.theme/master/en-us/_themes/global/js/global.min.js?v=294"></script>
+</head>
+
+<body lang="en-us" dir="ltr">
+	<div id="headerAreaHolder" ms.pgarea="header" data-bi-name="header">
+		<div id="uhfPlaceHolder" class="c-me"></div>
+	</div>
+
+	<div class="container mainContainer" ms.pgarea="body" data-bi-name="body">
+		<div class="primary-holder">
+
+			<main id="main" role="main" class="content" ms.cmpgrp="content" data-bi-name="content" lang="en-us" dir="ltr">
+
+
+				<h1 id="whats-new-in-c-6" sourcefile="docs/csharp/whats-new/csharp-6.md" sourcestartlinenumber="14" sourceendlinenumber="14">What&#39;s New in C# 6</h1>
+
+					<div class="metadata loading" ms.cmpgrp="page info" data-bi-name="page info">
+						<div>
+								<time class="date icons" datetime="09/22/2016">09/22/2016</time>
+								<span class="length icons">21 minutes to read</span>
+								<span class="contributors-text" hidden>Contributors</span>
+								<ul class="contributors" ms.cmpgrp="contributors" data-bi-name="contributors" hidden>
+											<li><a href="https://github.com/BillWagner" title="Bill Wagner" ms.cmpnm="contributorprofile" data-bi-name="contributorprofile"><img data-src="https://github.com/BillWagner.png?size=16" alt="Bill Wagner"></a></li>
+											<li><a href="https://github.com/mairaw" title="Maira Wenzel" ms.cmpnm="contributorprofile" data-bi-name="contributorprofile"><img data-src="https://github.com/mairaw.png?size=16" alt="Maira Wenzel"></a></li>
+											<li><a href="https://github.com/Styxxy" title="Hans De Mulder" ms.cmpnm="contributorprofile" data-bi-name="contributorprofile"><img data-src="https://github.com/Styxxy.png?size=16" alt="Hans De Mulder"></a></li>
+											<li><a href="https://github.com/guardrex" title="Luke Latham" ms.cmpnm="contributorprofile" data-bi-name="contributorprofile"><img data-src="https://github.com/guardrex.png?size=16" alt="Luke Latham"></a></li>
+											<li><a href="https://github.com/tompratt-AQ" title="tompratt-AQ" ms.cmpnm="contributorprofile" data-bi-name="contributorprofile"><img data-src="https://github.com/tompratt-AQ.png?size=16" alt="tompratt-AQ"></a></li>
+								</ul>
+						</div>
+
+
+						<nav id="center-doc-outline" class="doc-outline" ms.cmpgrp="intopic toc" data-bi-name="intopic toc" role="navigation" aria-label="On page navigation">
+							<h3>In this article</h3>
+						</nav>
+					</div>
+
+				<!-- <content> -->
+					<div>
+<p>The 6.0 release of C# contained many features that improve
+productivity for developers. Features in this release include:</p>
+<ul>
+<li><a href="#read-only-auto-properties" data-linktype="self-bookmark">Read-only Auto-properties</a>:<ul>
+<li>You can create read-only auto-properties that can be set only in constructors.</li>
+</ul>
+</li>
+<li><a href="#auto-property-initializers" data-linktype="self-bookmark">Auto-Property Initializers</a>:<ul>
+<li>You can write initialization expressions to set the initial value of an auto-property.</li>
+</ul>
+</li>
+<li><a href="#expression-bodied-function-members" data-linktype="self-bookmark">Expression-bodied function members</a>:<ul>
+<li>You can author one-line methods using lambda expressions.</li>
+</ul>
+</li>
+<li><a href="#using-static" data-linktype="self-bookmark">using static</a>:<ul>
+<li>You can import all the methods of a single class into the current namespace.</li>
+</ul>
+</li>
+<li><a href="#null-conditional-operators" data-linktype="self-bookmark">Null - conditional operators</a>:<ul>
+<li>You can concisely and safely access members of an object while still checking for null with the null conditional operator.</li>
+</ul>
+</li>
+<li><a href="#string-interpolation" data-linktype="self-bookmark">String Interpolation</a>:<ul>
+<li>You can write string formatting expressions using inline expressions instead of positional arguments.</li>
+</ul>
+</li>
+<li><a href="#exception-filters" data-linktype="self-bookmark">Exception filters</a>:<ul>
+<li>You can catch expressions based on properties of the exception or other program state. </li>
+</ul>
+</li>
+<li><a href="#nameof-expressions" data-linktype="self-bookmark">nameof Expressions</a>:<ul>
+<li>You can let the compiler generate string representations of symbols.</li>
+</ul>
+</li>
+<li><a href="#await-in-catch-and-finally-blocks" data-linktype="self-bookmark">await in catch and finally blocks</a>:<ul>
+<li>You can use <code>await</code> expressions in locations that previously disallowed them.</li>
+</ul>
+</li>
+<li><a href="#index-initializers" data-linktype="self-bookmark">index initializers</a>:<ul>
+<li>You can author initialization expressions for associative containers as well as sequence containers.</li>
+</ul>
+</li>
+<li><a href="#extension-add-methods-in-collection-initializers" data-linktype="self-bookmark">Extension methods for collection initializers</a>:<ul>
+<li>Collection initializers can rely on accessible extension methods, in addition to member methods.</li>
+</ul>
+</li>
+<li><a href="#improved-overload-resolution" data-linktype="self-bookmark">Improved overload resolution</a>:<ul>
+<li>Some constructs that previously generated ambiguous method calls now resolve correctly.</li>
+</ul>
+</li>
+</ul>
+<p>The overall effect of these features is that you write more concise code
+that is also more readable. The syntax contains less ceremony for many
+common practices. It&#39;s easier to see the design intent with less
+ceremony. Learn these features well, and you&#39;ll be more productive,
+write more readable code, and concentrate more on your core features
+than on the constructs of the language.</p>
+<p>The remainder of this topic provides details on each of these features.</p>
+<h2 id="auto-property-enhancements">Auto-Property enhancements</h2>
+<p>The syntax for automatically implemented properties (usually referred to as &#39;auto-properties&#39;)
+made it very easy to create properties
+that had simple get and set accessors:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/oldcode.cs" name="ClassicAutoProperty">public string FirstName { get; set; }
+public string LastName { get; set; }
+</code></pre><p>However, this simple syntax limited the kinds of designs you could support using
+auto-properties. C# 6 improves the auto-properties capabilities so that you can use
+them in more scenarios. You won&#39;t need to fall back on the more verbose syntax of
+declaring and manipulating the backing field by hand so often.</p>
+<p>The new syntax addresses scenarios for read-only properties, and for initializing
+the variable storage behind an auto-property.</p>
+<h3 id="read-only-auto-properties">Read-only auto-properties</h3>
+<p><em>Read-only auto-properties</em> provide a more concise syntax to create
+immutable types. The closest you could get to immutable types
+in earlier versions of C# was to declare private setters:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/oldcode.cs" name="ClassicReadOnlyAutoProperty">public string FirstName { get; private set; }
+public string LastName { get; private set; }
+</code></pre><p>Using this syntax, the compiler doesn&#39;t ensure that the type really is immutable. It only
+enforces that the <code>FirstName</code> and <code>LastName</code> properties are not modified from any
+code outside the class.</p>
+<p>Read-only auto-properties enable true read-only behavior. You declare the auto-property
+with only a get accessor:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="ReadOnlyAutoProperty">public string FirstName { get; }
+public string LastName { get;  }
+</code></pre><p>The <code>FirstName</code> and <code>LastName</code> properties can be set only in the body of a constructor:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="ReadOnlyAutoPropertyConstructor">public Student(string firstName, string lastName)
+{
+    if (IsNullOrWhiteSpace(lastName))
+        throw new ArgumentException(message: &quot;Cannot be blank&quot;, paramName: nameof(lastName));
+    FirstName = firstName;
+    LastName = lastName;
+}
+</code></pre><p>Trying to set <code>LastName</code> in another method generates a <code>CS0200</code> compilation error:</p>
+<pre><code class="lang-csharp">public class Student
+{
+    public string LastName { get;  }
+
+    public void ChangeName(string newLastName)
+    {
+        // Generates CS0200: Property or indexer cannot be assigned to -- it is read only
+        LastName = newLastName;
+    }
+}
+</code></pre><p>This feature enables true language support for creating immutable types and using
+the more concise and convenient auto-property syntax.</p>
+<h3 id="auto-property-initializers">Auto-Property Initializers</h3>
+<p><em>Auto-Property Initializers</em> let you declare the initial value for
+an auto-property as part of the property declaration.  In earlier versions,
+these properties would need to have setters and you would need
+to use that setter to initialize the data storage used by the backing
+field. Consider this class for a student that contains the name and a
+list of the student&#39;s grades:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/oldcode.cs" name="Construction">public Student(string firstName, string lastName)
+{
+    FirstName = firstName;
+    LastName = lastName;
+}
+</code></pre><p>As this class grows, you may include other constructors. Each constructor
+needs to initialize this field, or you&#39;ll introduce errors.</p>
+<p>C# 6 enables you to assign an initial value for the storage used by an
+auto-property in the auto-property declaration:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="Initialization">public ICollection&lt;double&gt; Grades { get; } = new List&lt;double&gt;();
+</code></pre><p>The <code>Grades</code> member is initialized where it is declared. That makes it
+easier to perform the initialization exactly once. The initialization
+is part of the property declaration, making it easier to equate the
+storage allocation with public interface for <code>Student</code> objects.</p>
+<p>Property Initializers can be used with read/write properties as well
+as read-only properties, as shown here.</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="ReadWriteInitialization">public Standing YearInSchool { get; set; } = Standing.Freshman;
+</code></pre><h2 id="expression-bodied-function-members">Expression-bodied function members</h2>
+<p>The body of a lot of members that we write consist of only one statement
+that can be represented as an expression. You can reduce that syntax by
+writing an expression-bodied member instead. It works for methods and
+read-only properties. For example, an override of <code>ToString()</code> is often
+a great candidate:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="ToStringExpressionMember">public override string ToString() =&gt; $&quot;{LastName}, {FirstName}&quot;;
+</code></pre><p>You can also use expression-bodied members in read-only properties as well:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="FullNameExpressionMember">public string FullName =&gt; $&quot;{FirstName} {LastName}&quot;;
+</code></pre><h2 id="using-static">using static</h2>
+<p>The <em>using static</em> enhancement enables you to import the static methods
+of a single class. Previously, the <code>using</code> statement imported all types
+in a namespace. </p>
+<p>Often we use a class&#39; static methods throughout our code. Repeatedly
+typing the class name can obscure the meaning of your code. A common
+example is when you write classes that perform many numeric calculations.
+Your code will be littered with <a class="xref" href="../../api/system.math.sin" data-linktype="relative-path">Sin</a>, <a class="xref" href="../../api/system.math.sqrt" data-linktype="relative-path">Sqrt</a> and other calls
+to different methods in the <a class="xref" href="../../api/system.math" data-linktype="relative-path">Math</a> class. The new <code>using static</code> syntax can make these
+classes much cleaner to read. You specify the class you&#39;re using:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="UsingStaticMath">using static System.Math;
+</code></pre><p>And now, you can use any static method in the <a class="xref" href="../../api/system.math" data-linktype="relative-path">Math</a> class without
+qualifying the <a class="xref" href="../../api/system.math" data-linktype="relative-path">Math</a> class. The <a class="xref" href="../../api/system.math" data-linktype="relative-path">Math</a> class is a great use case for
+this feature because it does not contain any
+instance methods. You can also use <code>using static</code> to import a
+class&#39; static methods for a class that has both static
+and instance methods. One of the most useful examples is <a class="xref" href="../../api/system.string" data-linktype="relative-path">String</a>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="UsingStatic">using static System.String;
+</code></pre><div class="NOTE"><p>Note</p><p>You must use the fully qualified class name, <code>System.String</code>
+in a static using statement. 
+You cannot use the <code>string</code> keyword instead. </p>
+</div>
+<p>You can now call static methods defined in the <a class="xref" href="../../api/system.string" data-linktype="relative-path">String</a> class without
+qualifying those methods as members of that class:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="UsingStaticString">if (IsNullOrWhiteSpace(lastName))
+    throw new ArgumentException(message: &quot;Cannot be blank&quot;, paramName: nameof(lastName));
+</code></pre><p>The <code>static using</code> feature and extension methods interact in
+interesting ways, and the language design included some rules
+that specifically address those interactions. The goal is to
+minimize any chances of breaking changes in existing codebases,
+including yours.</p>
+<p>Extension methods are only in scope when called using the
+extension method invocation syntax, not when called as a static method.
+You&#39;ll often see this in LINQ queries. You can import the LINQ pattern
+by importing <a class="xref" href="../../api/system.linq.enumerable" data-linktype="relative-path">Enumerable</a>.</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="UsingStaticLinq">using static System.Linq.Enumerable;
+</code></pre><p>This imports all the methods in the <a class="xref" href="../../api/system.linq.enumerable" data-linktype="relative-path">Enumerable</a> class.
+However, the extension methods are only in scope when called as extension
+methods. They are not in scope if they are called using the static method
+syntax:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="UsingStaticLinqMethod">public bool MakesDeansList()
+{
+    return Grades.All(g =&gt; g &gt; 3.5) &amp;&amp; Grades.Any();
+    // Code below generates CS0103: 
+    // The name &#39;All&#39; does not exist in the current context.
+    //return All(Grades, g =&gt; g &gt; 3.5) &amp;&amp; Grades.Any();
+}
+</code></pre><p>This decision is because extension methods are typically called using
+extension method invocation expressions. In the rare case where they are
+called using the static method call syntax it is to resolve ambiguity.
+Requiring the class name as part of the invocation seems wise.</p>
+<p>There&#39;s one last feature of <code>static using</code>. The <code>static using</code> directive
+also imports any nested types. That enables you to reference any nested
+types without qualification.</p>
+<h2 id="null-conditional-operators">Null-conditional operators</h2>
+<p>Null values complicate code. You need to check every access
+of variables to ensure you are not dereferencing <code>null</code>. The
+<em>null conditional operator</em> makes those checks much easier
+and fluid.</p>
+<p>Simply replace the member access <code>.</code> with <code>?.</code>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/program.cs" name="NullConditional">var first = person?.FirstName; 
+</code></pre><p>In the preceding example, the variable <code>first</code> is assigned <code>null</code> if the person object
+is <code>null</code>. Otherwise, it gets assigned the value of the <code>FirstName</code> property. Most importantly,
+the <code>?.</code> means that this line of code does not generate a <code>NullReferenceException</code> when
+the <code>person</code> variable is <code>null</code>. Instead, it short-circuits and produces <code>null</code>.</p>
+<p>Also, note that this expression returns a <code>string</code>, regardless of the value of <code>person</code>.
+In the case of short circuiting, the <code>null</code> value returned is typed to match the full
+expression.</p>
+<p>You can often use this construct with the <em>null coalescing</em> operator to assign
+default values when one of the properties are <code>null</code>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/program.cs" name="NullCoalescing">first = person?.FirstName ?? &quot;Unspecified&quot;;
+</code></pre><p>The right hand side operand of the <code>?.</code> operator is not limited to properties or fields.
+You can also use it to conditionally invoke methods. The most common use of member functions
+ with the null conditional operator is to safely invoke delegates
+(or event handlers) that may be <code>null</code>.  You&#39;ll do this by calling the delegate&#39;s <code>Invoke</code> method
+using the <code>?.</code> operator to access the member. You can see an example in the<br><a href="../delegates-patterns#handling-null-delegates" data-linktype="relative-path">delegate patterns</a> topic.</p>
+<p>The rules of the <code>?.</code> operator ensure that the left-hand side of the operator is
+evaluated only once. This is important and enables many idioms, including the
+example using event handlers. Let&#39;s start with the event handler usage. In previous
+versions of C#, you were encouraged to write code like this:</p>
+<pre><code class="lang-csharp">var handler = this.SomethingHappened;
+if (handler != null)
+    handler(this, eventArgs);
+</code></pre><p>This was preferred over a simpler syntax:</p>
+<pre><code class="lang-csharp">// Not recommended
+if (this.SomethingHappened != null)
+    this.SomethingHappened(this, eventArgs);
+</code></pre><div class="IMPORTANT"><p>Important</p><p>The preceding example introduces a race condition. The <code>SomethingHappened</code>
+event may have subscribers when checked against <code>null</code>, and those subscribers
+may have been removed before the event is raised. That would cause 
+a <a class="xref" href="../../api/system.nullreferenceexception" data-linktype="relative-path">NullReferenceException</a> to be thrown.</p>
+</div>
+<p>In this second version, the <code>SomethingHappened</code> event handler might
+be non-null when tested, but if other code removes a handler,
+it could still be null when the event handler was called.</p>
+<p>The compiler generates code for the <code>?.</code> operator that ensures
+the left side (<code>this.SomethingHappened</code>) of the <code>?.</code> expression is evaluated once, and the result
+is cached:</p>
+<pre><code class="lang-csharp">// preferred in C# 6:
+this.SomethingHappened?.Invoke(this, eventArgs);
+</code></pre><p>Ensuring that the left side is evaluated only once also enables you
+to use any expression, including method calls, on the left side of the
+<code>?.</code> Even if these have side-effects, they are evaluated once, so the
+side effects occur only once. You can see an example in our content
+on <a href="../events-overview#language-support-for-events" data-linktype="relative-path">events</a>.</p>
+<h2 id="string-interpolation">String Interpolation</h2>
+<p>C# 6 contains new syntax for composing strings from a format string
+and expressions that can be evaluated to produce other string values.</p>
+<p>Traditionally, you needed to use positional parameters in a method
+like <code>string.Format</code>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/oldcode.cs" name="stringFormat">public string FullName
+{
+    get
+    {
+        return string.Format(&quot;{0} {1}&quot;, FirstName, LastName);
+    }
+}
+</code></pre><p>With C# 6, the new string interpolation feature enables you to embed
+the expressions in the format string. Simple preface the string with
+<code>$</code>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="stringInterpolation">public string FullName =&gt; $&quot;{FirstName} {LastName}&quot;;
+</code></pre><p>This initial example used variable expressions for the substituted
+expressions. You can expand on this syntax to use any expression. For
+example, you could compute a student&#39;s grade point average as part of
+the interpolation:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="stringInterpolationExpression">public string GetFormattedGradePoint() =&gt;
+    $&quot;Name: {LastName}, {FirstName}. G.P.A: {Grades.Average()}&quot;;
+</code></pre><p>Running the preceding example, you would find that the output for <code>Grades.Average()</code>
+might have more decimal places than you would like. The string interpolation
+syntax supports all the format strings available using earlier formatting
+methods. You add the format strings inside the braces. Add a <code>:</code> following
+the expression to format:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="stringInterpolationFormat">public string GetGradePointPercentage() =&gt;
+    $&quot;Name: {LastName}, {FirstName}. G.P.A: {Grades.Average():F2}&quot;;
+</code></pre><p>The preceding line of code will format the value for <code>Grades.Average()</code> as
+a floating-point number with two decimal places.</p>
+<p>The <code>:</code> is always interpreted as the separator between the expression
+being formatted and the format string. This can introduce problems when
+your expression uses a <code>:</code> in another way, such as a conditional operator:</p>
+<pre><code class="lang-csharp">public string GetGradePointPercentages() =&gt;
+    $&quot;Name: {LastName}, {FirstName}. G.P.A: {Grades.Any() ? Grades.Average() : double.NaN:F2}&quot;;
+</code></pre><p>In the preceding example, the <code>:</code> is parsed as the beginning of the format string, not part
+of the conditional operator. In all cases where this happens, you can
+surround the expression with parentheses to force the compiler to interpret
+the expression as you intend:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="stringInterpolationConditional">public string GetGradePointPercentages() =&gt;
+    $&quot;Name: {LastName}, {FirstName}. G.P.A: {(Grades.Any() ? Grades.Average() : double.NaN):F2}&quot;;
+</code></pre><p>There aren&#39;t any limitations on the expressions you can place between
+the braces. You can execute a complex LINQ query inside an interpolated
+string to perform computations and display the result:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/newcode.cs" name="stringInterpolationLinq">public string GetAllGrades() =&gt;
+    $@&quot;All Grades: {Grades.OrderByDescending(g =&gt; g)
+    .Select(s =&gt; s.ToString(&quot;F2&quot;)).Aggregate((partial, element) =&gt; $&quot;{partial}, {element}&quot;)}&quot;;
+</code></pre><p>You can see from this sample that you can even nest a string interpolation
+expression inside another string interpolation expression. This example
+is very likely more complex than you would want in production code.
+Rather, it is illustrative of the breadth of the feature. Any C# expression
+can be placed between the curly braces of an interpolated string.</p>
+<h3 id="string-interpolation-and-specific-cultures">String interpolation and specific cultures</h3>
+<p>All the examples shown in the preceding section will format the strings using the current
+culture and language on the machine where the code executes. Often you
+may need to format the string produced using a specific culture.
+The object produced from a string interpolation is a type that has an
+implicit conversion to either <a class="xref" href="../../api/system.string" data-linktype="relative-path">String</a> or <a class="xref" href="../../api/system.formattablestring" data-linktype="relative-path">FormattableString</a>.</p>
+<p>The <a class="xref" href="../../api/system.formattablestring" data-linktype="relative-path">FormattableString</a> type contains the format string, and the results
+of evaluating the arguments before converting them to strings. You can
+use public methods of <a class="xref" href="../../api/system.formattablestring" data-linktype="relative-path">FormattableString</a> to specify the culture when
+formatting a string. For example, the following will produce a string
+using German as the language and culture. (It will use the &#39;,&#39; character
+for the decimal separator,
+and the &#39;.&#39; character as the thousands separator.)</p>
+<pre><code class="lang-csharp">FormattableString str = @&quot;Average grade is {s.Grades.Average()}&quot;;
+var gradeStr = string.Format(null, 
+    System.Globalization.CultureInfo.CreateSpecificCulture(&quot;de-de&quot;),
+    str.GetFormat(), str.GetArguments());
+</code></pre><div class="NOTE"><p>Note</p><p>The preceding example is not supported in .NET Core version 1.0.1. It is
+only supported in the .NET Framework.</p>
+</div>
+<p>In general, string interpolation expressions produce strings as their
+output. However, when you want greater control over the culture used to
+format the string, you can specify a specific output.  If this is a capability
+you often need, you can create convenience methods, as extension methods,
+to enable easy formatting with specific cultures.</p>
+<h2 id="exception-filters">Exception Filters</h2>
+<p>Another new feature in C# 6 is <em>exception filters</em>. Exception Filters
+are clauses that determine when a given catch clause should be applied.
+If the expression used for an exception filter evaluates to <code>true</code>, the
+catch clause performs its normal processing on an exception. If the
+expression evaluates to <code>false</code>, then the <code>catch</code> clause is skipped.</p>
+<p>One use is to examine information about an exception to determine if a
+<code>catch</code> clause can process the exception:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/NetworkClient.cs" name="ExceptionFilter">public static async Task&lt;string&gt; MakeRequest()
+{ 
+    var client = new System.Net.Http.HttpClient();
+    var streamTask = client.GetStringAsync(&quot;https://localHost:10000&quot;);
+    try {
+        var responseText = await streamTask;
+        return responseText;
+    } catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains(&quot;301&quot;))
+    {
+        return &quot;Site Moved&quot;;
+    }
+}
+</code></pre><p>The code generated by exception filters provides better information about
+an exception that is thrown and not processed. Before exception filters
+were added to the language, you would need to create code like the following:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/NetworkClient.cs" name="ExceptionFilterOld">public static async Task&lt;string&gt; MakeRequest()
+{ 
+    var client = new System.Net.Http.HttpClient();
+    var streamTask = client.GetStringAsync(&quot;https://localHost:10000&quot;);
+    try {
+        var responseText = await streamTask;
+        return responseText;
+    } catch (System.Net.Http.HttpRequestException e)
+    {
+        if (e.Message.Contains(&quot;301&quot;))
+            return &quot;Site Moved&quot;;
+        else
+            throw;
+    }
+}
+</code></pre><p>The point where the exception is thrown changes between these two examples.
+In the previous code, where a <code>throw</code> clause is used, any stack trace
+analysis or examination of crash dumps will show that the exception was
+thrown from the <code>throw</code> statement in your catch clause. The actual exception
+object will contain the original call stack, but all other information
+about any variables in the call stack between this throw point and the
+location of the original throw point has been lost. </p>
+<p>Contrast that with how the code using an exception filter is processed:
+the exception filter expression evaluates to <code>false</code>. Therefore, execution never
+enters the <code>catch</code> clause. Because the <code>catch</code> clause does not execute,
+no stack unwinding takes place. That means the original
+throw location is preserved for any debugging activities that would take
+place later.</p>
+<p>Whenever you need to evaluate fields or properties of an exception, instead
+of relying solely on the exception type, use an exception filter to
+preserve more debugging information.</p>
+<p>Another recommended pattern with exception filters is to use them for
+logging routines. This usage also leverages the manner in which the exception
+throw point is preserved when an exception filter evaluates to <code>false</code>.</p>
+<p>A logging method would be a method whose argument is the exception that
+unconditionally returns <code>false</code>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/ExceptionFilterHelpers.cs" name="ExceptionFilterLogging">public static bool LogException(this Exception e)
+{
+    Console.Error.WriteLine(@&quot;Exceptions happen: {e}&quot;);
+    return false;
+} 
+</code></pre><p>Whenever you want to log an exception, you can add a catch clause, and
+use this method as the exception filter:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/program.cs" name="LogException">public void MethodThatFailsSometimes()
+{
+    try {
+        PerformFailingOperation();
+    } catch (Exception e) when (e.LogException())
+    {
+        // This is never reached!
+    }
+} 
+</code></pre><p>The exceptions are never caught, because the <code>LogException</code> method always
+returns <code>false</code>. That always false exception filter means that you can
+place this logging handler before any other exception handlers:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/program.cs" name="LogExceptionRecovery">public void MethodThatFailsButHasRecoveryPath()
+{
+    try {
+        PerformFailingOperation();
+    } catch (Exception e) when (e.LogException())
+    {
+        // This is never reached!
+    }
+    catch (RecoverableException ex)
+    {
+        Console.WriteLine(ex.ToString());
+        // This can still catch the more specific
+        // exception because the exception filter
+        // above always returns false.
+        // Perform recovery here 
+    }
+}
+</code></pre><p>The preceding example highlights a very important facet of exception filters.
+The exception filters enable scenarios where a more general exception
+catch clause may appear before a more specific one. It&#39;s also possible
+to have the same exception type appear in multiple catch clauses:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/NetworkClient.cs" name="HandleNotChanged">public static async Task&lt;string&gt; MakeRequestWithNotModifiedSupport()
+{ 
+    var client = new System.Net.Http.HttpClient();
+    var streamTask = client.GetStringAsync(&quot;https://localHost:10000&quot;);
+    try {
+        var responseText = await streamTask;
+        return responseText;
+    } catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains(&quot;301&quot;))
+    {
+        return &quot;Site Moved&quot;;
+    } catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains(&quot;304&quot;))
+    {
+        return &quot;Use the Cache&quot;;
+    }
+}
+</code></pre><p>Another recommended pattern helps prevent catch clauses from processing
+exceptions when a debugger is attached. This technique enables you to
+run an application with the debugger, and stop execution when an exception
+is thrown.</p>
+<p>In your code, add an exception filter so that any recovery code executes
+only when a debugger is not attached:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/program.cs" name="LogExceptionDebugger">public void MethodThatFailsWhenDebuggerIsNotAttached()
+{
+    try {
+        PerformFailingOperation();
+    } catch (Exception e) when (e.LogException())
+    {
+        // This is never reached!
+    }
+    catch (RecoverableException ex) when (!System.Diagnostics.Debugger.IsAttached)
+    {
+        Console.WriteLine(ex.ToString());
+        // Only catch exceptions when a debugger is not attached.
+        // Otherwise, this should stop in the debugger. 
+    }
+}
+</code></pre><p>After adding this in code, you set your debugger to break on all unhandled
+exceptions. Run the program under the debugger, and the debugger breaks
+whenever <code>PerformFailingOperation()</code> throws a <code>RecoverableException</code>.
+The debugger breaks your program, because the catch clause won&#39;t be executed
+due to the false-returning exception filter.</p>
+<h2 id="nameof-expressions"><code>nameof</code> Expressions</h2>
+<p>The <code>nameof</code> expression evaluates to the name of a symbol. It&#39;s a great
+way to get tools working whenever you need the name of a variable,
+a property, or a member field.</p>
+<p>One of the most common uses for <code>nameof</code> is to provide the name of a symbol
+that caused an exception:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/NewCode.cs" name="nameof">if (IsNullOrWhiteSpace(lastName))
+    throw new ArgumentException(message: &quot;Cannot be blank&quot;, paramName: nameof(lastName));
+</code></pre><p>Another use is with XAML based applications that implement the <code>INotifyPropertyChanged</code>
+interface:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/viewmodel.cs" name="nameofNotify">public string LastName
+{
+    get { return lastName; }
+    set
+    {
+        if (value != lastName)
+        {
+            lastName = value;
+            PropertyChanged?.Invoke(this, 
+                new PropertyChangedEventArgs(nameof(LastName)));
+        }
+    }
+}
+private string lastName;
+</code></pre><p>The advantage of using the <code>nameof</code> operator over a constant string is
+that tools can understand the symbol. If you use refactoring tools to
+rename the symbol, it will rename it in the <code>nameof</code> expression. Constant
+strings don&#39;t have that advantage. Try it yourself in your favorite editor:
+rename a variable, and any <code>nameof</code> expressions will update as well.</p>
+<p>The <code>nameof</code> expression produces the unqualified name of its argument
+(<code>LastName</code> in the previous examples) even if you use the fully qualified
+name for the argument:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/viewmodel.cs" name="QualifiedNameofNotify">public string FirstName
+{
+    get { return firstName; }
+    set
+    {
+        if (value != firstName)
+        {
+            firstName = value;
+            PropertyChanged?.Invoke(this, 
+                new PropertyChangedEventArgs(nameof(UXComponents.ViewModel.FirstName)));
+        }
+    }
+}
+private string firstName;
+</code></pre><p>This <code>nameof</code> expression produces <code>FirstName</code>, not <code>UXComponents.ViewModel.FirstName</code>.</p>
+<h2 id="await-in-catch-and-finally-blocks">Await in Catch and Finally blocks</h2>
+<p>C# 5 had several limitations around where you could place <code>await</code> expressions.
+One of those has been removed in C# 6. You can now use <code>await</code> in <code>catch</code>
+or <code>finally</code> expressions. </p>
+<p>The addition of await expressions in catch and finally blocks may appear
+to complicate how those are processed. Let&#39;s add an example to discuss
+how this appears. In any async method, you can use an await expression
+in a finally clause.</p>
+<p>With C# 6, you can also await in catch expressions. This is most often
+used with logging scenarios:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/NetworkClient.cs" name="AwaitFinally">public static async Task&lt;string&gt; MakeRequestAndLogFailures()
+{ 
+    await logMethodEntrance();
+    var client = new System.Net.Http.HttpClient();
+    var streamTask = client.GetStringAsync(&quot;https://localHost:10000&quot;);
+    try {
+        var responseText = await streamTask;
+        return responseText;
+    } catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains(&quot;301&quot;))
+    {
+        await logError(&quot;Recovered from redirect&quot;, e);
+        return &quot;Site Moved&quot;;
+    }
+    finally
+    {
+        await logMethodExit();
+        client.Dispose();
+    }
+}
+</code></pre><p>The implementation details for adding <code>await</code> support inside <code>catch</code>
+and <code>finally</code> clauses ensures that the behavior is consistent with the
+behavior for synchronous code. When code executed in a <code>catch</code> or <code>finally</code>
+clause throws, execution looks for a suitable <code>catch</code> clause in the next
+surrounding block. If there was a current exception, that exception is
+lost. The same happens with awaited expressions in <code>catch</code> and <code>finally</code>
+clauses: a suitable <code>catch</code> is searched for, and the current exception,
+if any, is lost.  </p>
+<div class="NOTE"><p>Note</p><p>This behavior is the reason it&#39;s recommended to write <code>catch</code> and <code>finally</code>
+clauses carefully, to avoid introducing new exceptions.</p>
+</div>
+<h2 id="index-initializers">Index Initializers</h2>
+<p><em>Index Initializers</em> is one of two features that make collection
+initializers more consistent. In earlier releases of C#, you could use
+<em>collection initializers</em> only with sequence style collections:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/initializers.cs" name="ListInitializer">private List&lt;string&gt; messages = new List&lt;string&gt; 
+{
+    &quot;Page not Found&quot;,
+    &quot;Page moved, but left a forwarding address.&quot;,
+    &quot;The web server can&#39;t come out to play today.&quot;
+};
+</code></pre><p>Now, you can also use them with <a class="xref" href="../../api/system.collections.generic.dictionary-2" data-linktype="relative-path">Dictionary&lt;TKey,TValue&gt;</a> collections and similar types:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/initializers.cs" name="DictionaryInitializer">private Dictionary&lt;int, string&gt; webErrors = new Dictionary&lt;int, string&gt;
+{
+    [404] = &quot;Page not Found&quot;,
+    [302] = &quot;Page moved, but left a forwarding address.&quot;,
+    [500] = &quot;The web server can&#39;t come out to play today.&quot;
+};
+</code></pre><p>This feature means that associative containers can be initialized using
+syntax similar to what&#39;s been in place for sequence containers for several
+versions.</p>
+<h3 id="extension-add-methods-in-collection-initializers">Extension <code>Add</code> methods in collection initializers</h3>
+<p>Another feature that makes collection initialization easier is the ability
+to use an <em>extension method</em> for the <code>Add</code> method. This feature was
+added for parity with Visual Basic. </p>
+<p>The feature is most useful when you have a custom collection class that
+has a method with a different name to semantically add new items.</p>
+<p>For example, consider a collection of students like this:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/enrollment.cs" name="Enrollment">public class Enrollment : IEnumerable&lt;Student&gt;
+{
+    private List&lt;Student&gt; allStudents = new List&lt;Student&gt;();
+
+    public void Enroll(Student s)
+    {
+        allStudents.Add(s);
+    }
+
+    public IEnumerator&lt;Student&gt; GetEnumerator()
+    {
+        return ((IEnumerable&lt;Student&gt;)allStudents).GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return ((IEnumerable&lt;Student&gt;)allStudents).GetEnumerator();
+    }
+}
+</code></pre><p>The <code>Enroll</code> method adds a student. But it doesn&#39;t follow the <code>Add</code> pattern.
+In previous versions of C#, you could not use collection initializers with an
+<code>Enrollment</code> object:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/classList.cs" name="InitializeEnrollment">var classList = new Enrollment()
+{
+    new Student(&quot;Lessie&quot;, &quot;Crosby&quot;),
+    new Student(&quot;Vicki&quot;, &quot;Petty&quot;),
+    new Student(&quot;Ofelia&quot;, &quot;Hobbs&quot;),
+    new Student(&quot;Leah&quot;, &quot;Kinney&quot;),
+    new Student(&quot;Alton&quot;, &quot;Stoker&quot;),
+    new Student(&quot;Luella&quot;, &quot;Ferrell&quot;),
+    new Student(&quot;Marcy&quot;, &quot;Riggs&quot;),
+    new Student(&quot;Ida&quot;, &quot;Bean&quot;),
+    new Student(&quot;Ollie&quot;, &quot;Cottle&quot;),
+    new Student(&quot;Tommy&quot;, &quot;Broadnax&quot;),
+    new Student(&quot;Jody&quot;, &quot;Yates&quot;),
+    new Student(&quot;Marguerite&quot;, &quot;Dawson&quot;),
+    new Student(&quot;Francisca&quot;, &quot;Barnett&quot;),
+    new Student(&quot;Arlene&quot;, &quot;Velasquez&quot;),
+    new Student(&quot;Jodi&quot;, &quot;Green&quot;),
+    new Student(&quot;Fran&quot;, &quot;Mosley&quot;),
+    new Student(&quot;Taylor&quot;, &quot;Nesmith&quot;),
+    new Student(&quot;Ernesto&quot;, &quot;Greathouse&quot;),
+    new Student(&quot;Margret&quot;, &quot;Albert&quot;),
+    new Student(&quot;Pansy&quot;, &quot;House&quot;),
+    new Student(&quot;Sharon&quot;, &quot;Byrd&quot;),
+    new Student(&quot;Keith&quot;, &quot;Roldan&quot;),
+    new Student(&quot;Martha&quot;, &quot;Miranda&quot;),
+    new Student(&quot;Kari&quot;, &quot;Campos&quot;),
+    new Student(&quot;Muriel&quot;, &quot;Middleton&quot;),
+    new Student(&quot;Georgette&quot;, &quot;Jarvis&quot;),
+    new Student(&quot;Pam&quot;, &quot;Boyle&quot;),
+    new Student(&quot;Deena&quot;, &quot;Travis&quot;),
+    new Student(&quot;Cary&quot;, &quot;Totten&quot;),
+    new Student(&quot;Althea&quot;, &quot;Goodwin&quot;)
+};
+</code></pre><p>Now you can, but only if you create an extension method that maps <code>Add</code> to
+<code>Enroll</code>:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/classList.cs" name="ExtensionAdd">public static class StudentExtensions
+{
+    public static void Add(this Enrollment e, Student s) =&gt; e.Enroll(s);
+}
+</code></pre><p>What you are doing with this feature is to map whatever method adds
+items to a collection to a method named <code>Add</code> by creating an
+extension method: </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/enrollment.cs" name="Enrollment">public class Enrollment : IEnumerable&lt;Student&gt;
+{
+    private List&lt;Student&gt; allStudents = new List&lt;Student&gt;();
+
+    public void Enroll(Student s)
+    {
+        allStudents.Add(s);
+    }
+
+    public IEnumerator&lt;Student&gt; GetEnumerator()
+    {
+        return ((IEnumerable&lt;Student&gt;)allStudents).GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return ((IEnumerable&lt;Student&gt;)allStudents).GetEnumerator();
+    }
+}
+</code></pre><pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/classList.cs" name="ExtensionAddSample">public class ClassList
+{
+    public Enrollment CreateEnrollment()
+    {
+        var classList = new Enrollment()
+        {
+            new Student(&quot;Lessie&quot;, &quot;Crosby&quot;),
+            new Student(&quot;Vicki&quot;, &quot;Petty&quot;),
+            new Student(&quot;Ofelia&quot;, &quot;Hobbs&quot;),
+            new Student(&quot;Leah&quot;, &quot;Kinney&quot;),
+            new Student(&quot;Alton&quot;, &quot;Stoker&quot;),
+            new Student(&quot;Luella&quot;, &quot;Ferrell&quot;),
+            new Student(&quot;Marcy&quot;, &quot;Riggs&quot;),
+            new Student(&quot;Ida&quot;, &quot;Bean&quot;),
+            new Student(&quot;Ollie&quot;, &quot;Cottle&quot;),
+            new Student(&quot;Tommy&quot;, &quot;Broadnax&quot;),
+            new Student(&quot;Jody&quot;, &quot;Yates&quot;),
+            new Student(&quot;Marguerite&quot;, &quot;Dawson&quot;),
+            new Student(&quot;Francisca&quot;, &quot;Barnett&quot;),
+            new Student(&quot;Arlene&quot;, &quot;Velasquez&quot;),
+            new Student(&quot;Jodi&quot;, &quot;Green&quot;),
+            new Student(&quot;Fran&quot;, &quot;Mosley&quot;),
+            new Student(&quot;Taylor&quot;, &quot;Nesmith&quot;),
+            new Student(&quot;Ernesto&quot;, &quot;Greathouse&quot;),
+            new Student(&quot;Margret&quot;, &quot;Albert&quot;),
+            new Student(&quot;Pansy&quot;, &quot;House&quot;),
+            new Student(&quot;Sharon&quot;, &quot;Byrd&quot;),
+            new Student(&quot;Keith&quot;, &quot;Roldan&quot;),
+            new Student(&quot;Martha&quot;, &quot;Miranda&quot;),
+            new Student(&quot;Kari&quot;, &quot;Campos&quot;),
+            new Student(&quot;Muriel&quot;, &quot;Middleton&quot;),
+            new Student(&quot;Georgette&quot;, &quot;Jarvis&quot;),
+            new Student(&quot;Pam&quot;, &quot;Boyle&quot;),
+            new Student(&quot;Deena&quot;, &quot;Travis&quot;),
+            new Student(&quot;Cary&quot;, &quot;Totten&quot;),
+            new Student(&quot;Althea&quot;, &quot;Goodwin&quot;)
+        };
+        return classList;
+    }           
+}
+
+public static class StudentExtensions
+{
+    public static void Add(this Enrollment e, Student s) =&gt; e.Enroll(s);
+}
+</code></pre><h2 id="improved-overload-resolution">Improved overload resolution</h2>
+<p>This last feature is one you probably won&#39;t notice. There were constructs
+where the previous version of the C# compiler may have found some method
+calls involving lambda expressions ambiguous. Consider this method:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/overloads.cs" name="AsyncMethod">static Task DoThings() 
+{
+     return Task.FromResult(0); 
+}
+</code></pre><p>In earlier versions of C#, calling that method using the method group
+syntax would fail:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/overloads.cs" name="MethodGroup">Task.Run(DoThings); 
+</code></pre><p>The earlier compiler could not distinguish correctly between <code>Task.Run(Action)</code>
+and <code>Task.Run(Func&lt;Task&gt;())</code>. In previous versions, you&#39;d need to use
+a lambda expression as an argument:</p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/samples/snippets/csharp/new-in-6/overloads.cs" name="Lambda">Task.Run(() =&gt; DoThings());
+</code></pre><p>The C# 6 compiler correctly determines that <code>Task.Run(Func&lt;Task&gt;())</code> is
+a better choice.</p>
+</div>
+				<!-- </content> -->
+
+
+			</main>
+
+
+				<div id="comments-container" ms.cmpgrp="comments" data-bi-name="comments" role="form"></div>
+		</div>
+
+		<div class="pageActions">
+			<div id="page-actions" ms.cmpgrp="pageactions" data-bi-name="pageactions" role="complementary">
+				<div id="page-actions-content">
+					<ul class="action-list">
+							<li>
+								<a href="#comments-container" id="comments-link" ms.cmpnm="comments" data-bi-name="comments">
+									<i class="icon icon-comments"></i>Comments								</a>
+							</li>
+									<li id="contenteditbtn">
+										<a href="https://github.com/dotnet/docs/blob/master/docs/csharp/whats-new/csharp-6.md" title="Edit This Document" ms.cmpnm="edit" data-bi-name="edit">
+											<i class="icon icon-editor"></i>Edit										</a>
+									</li>
+						<li>
+							<a href="#" class="sharebutton" title="Share This Document" ms.cmpnm="share" data-bi-name="share"><i class="icon icon-share"></i>Share</a>
+							<div class="share-container">
+									<div><a href="" class="share-twitter" ms.cmpnm="twitter" data-bi-name="twitter"><i class="icon icon-twitter"></i>Twitter</a></div>
+									<div><a href="" class="share-linkedin" ms.cmpnm="share-linkedin" data-bi-name="linkedin"><i class="icon icon-linkedin"></i>LinkedIn</a></div>
+									<div><a href="" class="share-facebook" ms.cmpnm="facebook" data-bi-name="facebook"><i class="icon icon-facebook"></i>Facebook</a></div>
+									<div><a href="" class="share-email" ms.cmpnm="email" data-bi-name="email"><i class="icon icon-email"></i>Email</a></div>
+							</div>
+						</li>
+						<li class="typeSep">|</li>
+						<li>
+							<label for="theme-selector">Theme</label>
+							<select id="theme-selector" data-bi-name="select-theme">
+								<option value="" class="removedOnload"></option>
+								<option value="">Light</option>
+								<option value="theme_night">Dark</option>
+							</select>
+						</li>
+					</ul>
+
+					<nav id="side-doc-outline" class="doc-outline" ms.cmpnm="intopic toc" data-bi-name="intopic toc" role="navigation" aria-label="On page navigation">
+						<h3>In this article</h3>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<ul class="breadcrumbs" ms.cmpgrp="breadcrumb" data-bi-name="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Breadcrumb"><li></li></ul>
+
+		<div class="sidebar" id="sidebar" ms.cmpgrp="left toc" data-bi-name="left toc" role="navigation" aria-label="Main Navigation">
+			<div id="sidebarContent">
+				<div class="filterHolder">
+				</div>
+				<nav class="toc"></nav>
+				<div class="pdfDownloadHolder"></div>
+			</div>
+			<div class="tocSpace"></div>
+		</div>
+
+		<div id="menu-nav" class="dropdown-container">
+			<div class="dropdown dropdown-full mobilenavi">
+					<select>
+					</select>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="container footerContainer" >
+<footer id="footer" ms.pgarea="footer" data-bi-name="footer" class="footer-layout">
+  <div class="container" role="contentinfo">
+
+    <a data-mscc-ic="false" id="locale-selector-link" href="#" data-bi-name="select-locale" ms.cmpnm="select-locale"></a>
+
+    <ul class="links" ms.cmpgrp="footerlinks" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" ms.cmpnm="bloglink" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="//privacy.microsoft.com/en-us/" ms.cmpnm="privacy" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="/en-us/legal/termsofuse" ms.cmpnm="termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="//aka.ms/sitefeedback" ms.cmpnm="feedback" data-bi-name="feedback">Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" ms.cmpnm="trademarks" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+  </div>
+</footer>	</div>
+
+	<script src="/_themes/docs.theme/master/en-us/_themes/javascript/c8402cbc136b2fc0f749.conceptual.js"></script>
+</body>
+</html>
