@@ -21,6 +21,9 @@ namespace StringsExamples
 			var input = 10345;
 			var result = Tools.SumNumberDigits(input);
 			Console.WriteLine(string.Format("Sum of {0} digits is {1}", input, result));
+
+
+
 			Console.ReadLine();
 		}
 	}
