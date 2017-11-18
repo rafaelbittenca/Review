@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsNumberExamples", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{AD0E89BF-8A8B-41A4-9C94-F765E96221B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{AD1B82FC-8FD7-4DCB-9DF4-0C98462A2906}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{AD0E89BF-8A8B-41A4-9C94-F765E96221B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD0E89BF-8A8B-41A4-9C94-F765E96221B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD0E89BF-8A8B-41A4-9C94-F765E96221B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1B82FC-8FD7-4DCB-9DF4-0C98462A2906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1B82FC-8FD7-4DCB-9DF4-0C98462A2906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1B82FC-8FD7-4DCB-9DF4-0C98462A2906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1B82FC-8FD7-4DCB-9DF4-0C98462A2906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
