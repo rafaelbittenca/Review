@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DataStructures
 {
@@ -91,21 +90,21 @@ namespace DataStructures
 			//This particular C# data structure very strongly resembles the List<> data strucuture.
 			//So what is the difference? A HashSet has the very important characteristic that it 
 			//does not allow duplicate values
-			HashSet<int> mySet = new HashSet<int>();
-			mySet.Add(3);
-			mySet.Add(5);
-			mySet.Add(3);
-			mySet.Add(10);
-			List<int> myListFromSet = mySet.ToList<int>();
-			int myInt = myListFromSet[2];
-			//
-			int[] numbers =  { 1, 2, 4, 9, 2, 6, 4, 2, 0 };
+			//HashSet<int> mySet = new HashSet<int>();
+			//mySet.Add(3);
+			//mySet.Add(5);
+			//mySet.Add(3);
+			//mySet.Add(10);
+			//List<int> myListFromSet = mySet.ToList<int>();
+			//int myInt = myListFromSet[2];
+			////
+			//int[] numbers =  { 1, 2, 4, 9, 2, 6, 4, 2, 0 };
 
-			string[] myArray =  { "rafa","day","joao","maria","rafa","jose","rafa"};
-			HashSet<string> myNames = new HashSet<string>(myArray);
-			myNames.Add("jose");
-			myNames.Add("rodrigo");
-			myNames.Add("rafa");
+			//string[] myArray =  { "rafa","day","joao","maria","rafa","jose","rafa"};
+			//HashSet<string> myNames = new HashSet<string>(myArray);
+			//myNames.Add("jose");
+			//myNames.Add("rodrigo");
+			//myNames.Add("rafa");
 			//foreach (var i in myNames) { Console.WriteLine(i); }
 
 			//-------------------------------------------------------------------------------------
@@ -136,6 +135,44 @@ namespace DataStructures
 			//    Console.WriteLine(queue.Dequeue());
 			//}
 			//-------------------------------------------------------------------------------------
+
+			List<String> l_bs = new List<string>(); //for binary search
+			l_bs.Add("Abcdpmjk");
+			l_bs.Add("Mkjlo01");
+			l_bs.Add("Hmjkil");
+			l_bs.Add("Iujlp991");
+			l_bs.Add("Rafael");
+			l_bs.Add("Joaoa");
+			l_bs.Add("Maria");
+			foreach(string name in l_bs)
+			{
+				Console.WriteLine(name);
+			}
+			Console.WriteLine("--------Sort---------");
+			l_bs.Sort();
+			foreach (string name in l_bs)
+			{
+				Console.WriteLine(name);
+			}
+			Console.WriteLine("--------Add----------");
+			int index = l_bs.BinarySearch("BinarySeach");
+			if (index < 0) l_bs.Add("BinarySeach");
+			foreach (string name in l_bs)
+			{
+				Console.WriteLine(name);
+			}
+			Console.WriteLine("-----SearchBinary-----");
+			
+			index = l_bs.FindIndex(s => s.Equals("BinarySeach"));
+			if (l_bs.Count > 0) Console.WriteLine("Index {0} - {1}", index, l_bs[index]);
+			Console.WriteLine("--------Sort---------");
+			l_bs.Sort();
+			foreach (string name in l_bs)
+				Console.WriteLine(name);
+			Console.WriteLine("-----SearchBinary-----");
+			index = l_bs.FindIndex(s => s.Equals("BinarySeach"));
+			if (l_bs.Count > 0) Console.WriteLine("Index {0} - {1}", index, l_bs[index]);
+
 			Console.ReadLine();
 		}
 	}

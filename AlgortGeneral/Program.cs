@@ -1,16 +1,30 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace AlgortGeneral
 {
 	class Program
 	{
+		private static string resultTask;
+		static async Task<string> SaySomething()
+		{
+			await Task.Delay(5);
+			//Thread.Sleep(5);
+			resultTask = "Hello world!";
+			return "Something";
+		}
+
 		static void Main(string[] args)
 		{
+			#region asyncawait
+			#endregion
+			SaySomething();
+			Console.WriteLine("Result: " + resultTask);
+
+			Console.ReadLine();
 			#region General
 			//Search Phones Files - Regular Expression
 			//PhonesFromSearch.ExtractPhonesFromSearch();
-
-
 			//Calculate FibonacciNumber ??
 			//int number = 144;
 			//int result = FibonacciNumber.CalculateFibonacci(number);
@@ -25,10 +39,15 @@ namespace AlgortGeneral
 			//Find the largest int value in an int array. 
 			//var array = new int[] { 1, 2, 4, 10, 50, 2, 45, 33, 1, 4 };
 			//var max = array.Max();
+
+
+			//var evenNumbers = ArrayExtensions.EvenNumbers(array);
+			//var total = ArrayExtensions.TotalEvenNumbers(array);
+
 			//FindMaxNumberArray.FindMax(array);
 			//int index = -1;
 			//int maxValue = Int32.MinValue;
-			//for(int x = 0; x < array.Length; x++)
+			//for (int x = 0; x < array.Length; x++)
 			//{
 			//	int value = array[x];
 			//	if (value > maxValue)
@@ -157,6 +176,10 @@ namespace AlgortGeneral
 			c.MethodA(1);           // C.MethodA(object)
 			c.MethodA("hello");     // C.MethodA(object)
 			c.MethodB();            // C.MethodB()
+
+			//-------------------------------------------------------------------------
+			Mod3And5Interval.PrintMod3And5FromInterval(1, 50);
+			Console.Read();
 
 			Console.ReadLine();
 		}
