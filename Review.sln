@@ -37,10 +37,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysChallenges", "Anagram
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{B6C09897-27FE-4D20-8356-1106FAC5DCA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{4FEB46B4-50DF-4863-AC0D-288524C6F875}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPatterns", "TestPatterns\TestPatterns.csproj", "{F123F016-60C3-4055-80C9-3DA93199FDF0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,14 +111,6 @@ Global
 		{B6C09897-27FE-4D20-8356-1106FAC5DCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C09897-27FE-4D20-8356-1106FAC5DCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C09897-27FE-4D20-8356-1106FAC5DCA5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FEB46B4-50DF-4863-AC0D-288524C6F875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FEB46B4-50DF-4863-AC0D-288524C6F875}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FEB46B4-50DF-4863-AC0D-288524C6F875}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FEB46B4-50DF-4863-AC0D-288524C6F875}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F123F016-60C3-4055-80C9-3DA93199FDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F123F016-60C3-4055-80C9-3DA93199FDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F123F016-60C3-4055-80C9-3DA93199FDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F123F016-60C3-4055-80C9-3DA93199FDF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
